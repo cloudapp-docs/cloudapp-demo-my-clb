@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    k8s-app: {{ .Values.SERVER_NAME }}
+    qcloud-app: {{ .Values.SERVER_NAME }}
+  name: "{{ .Values.SERVER_NAME }}-statefulset"
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      k8s-app: {{ .Values.SERVER_NAME }}
+      qcloud-app: {{ .Values.SERVER_NAME }}
+  serviceName: {{ .Values.SERVER_NAME }}
+  template:
+    metadata:
+      annotations:
+        eks.tke.cloud.tencent.com/role-name: {{ .Values.CAM_ROLE }}
+        # eks.tke.cloud.tencent.com/use-image-cache: auto
+      labels:
+        k8s-app: {{ .Values.SERVER_NAME }}
+        qcloud-app: {{ .Values.SERVER_NAME }}
+    spec:
+      containers:
+        - name: "{{ .Values.SERVER_NAME }}-container"
+          image: {{ .Values.SERVER_IMAGE }}
+          env:
+            # 将 CAM 角色名作为环境变量传入运行容器，容器内部使用该环境变量申请临时密钥
+            - name: CAM_ROLE
+              value: {{ .Values.CAM_ROLE }}
+          resources:
+            limits:
+              cpu: 500m
+              memory: 1Gi
+            requests:
+              cpu: 250m
+              memory: 256Mi
+      imagePullSecrets:
+        - name: cloudapp-registry-key

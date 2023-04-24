@@ -1,0 +1,20 @@
+# 子网 ID，用于生成内网服务，从 tf 声明中注入
+SUBNET_ID: ""
+
+# CAM 角色名，用于获取调用云 API 的临时密钥，从 tf 声明中注入
+CAM_ROLE: ""
+
+# 拉取镜像所需凭据，从 tf 注入
+IMAGE_CREDENTIALS:
+  REGISTRY: ""
+  USERNAME: ""
+  PASSWORD: ”"
+
+# API 服务端口
+SERVER_PORT: 8000
+
+# API 服务名
+SERVER_NAME: api-server
+
+# API 服务镜像
+SERVER_IMAGE: cloudapp-tcr.tencentcloudcr.com/techird/cloudapp-demo-my-clb:v1

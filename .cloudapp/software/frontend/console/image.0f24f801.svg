@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="73px" viewBox="0 0 72 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="38.4747572%" y1="-24.5812418%" x2="56.4228413%" y2="87.4875898%" id="linearGradient-1">
+            <stop stop-color="#006EFF" offset="0%"></stop>
+            <stop stop-color="#B4D5FF" stop-opacity="0.617980072" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="38.135453%" y1="-24.5812418%" x2="56.6119303%" y2="87.4875898%" id="linearGradient-2">
+            <stop stop-color="#006EFF" offset="0%"></stop>
+            <stop stop-color="#B4D5FF" stop-opacity="0.617980072" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="40.2490443%" y1="-24.5812418%" x2="55.4340583%" y2="87.4875898%" id="linearGradient-3">
+            <stop stop-color="#006EFF" offset="0%"></stop>
+            <stop stop-color="#B4D5FF" stop-opacity="0.617980072" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g transform="translate(5.000000, 0.000000)">
+                <polygon id="矩形" fill="#EAEBEB" points="5.30526316 30.2432503 25.1809663 42.1132009 25.1809663 71.4724242 5.30526316 59.6024736"></polygon>
+                <polygon id="矩形" fill="#DCDEDE" transform="translate(31.726602, 51.998880) scale(-1, 1) translate(-31.726602, -51.998880) " points="24.8780787 33.0393668 38.5751259 41.5991697 38.5751259 70.958393 24.8780787 62.3985901"></polygon>
+                <polygon id="矩形" fill="#DCDEDE" transform="translate(51.011789, 35.373748) scale(-1, 1) translate(-51.011789, -35.373748) " points="43.052836 18.3597552 58.9707427 27.6049994 58.9707427 52.3877417 43.052836 42.4434684"></polygon>
+                <polygon id="矩形" fill="#F8F8F8" transform="translate(23.130506, 31.291794) rotate(-45.000000) translate(-23.130506, -31.291794) " points="11.2676336 17.9459663 28.9520775 22.7177573 34.9933782 44.6376217 17.3089342 39.8658307"></polygon>
+                <g id="分组-12" transform="translate(48.645069, 30.757282)">
+                    <polygon id="矩形" fill="#EAEBEB" points="-1.24344979e-14 5.69579288 7.24919094 9.81086748 7.24919094 20.6846539 -1.24344979e-14 16.5695793"></polygon>
+                    <polygon id="矩形" fill="#DCDEDE" transform="translate(9.785681, 13.753433) scale(-1, 1) translate(-9.785681, -13.753433) " points="7.24919094 6.73139159 12.3221714 9.90168894 12.3221714 20.7754753 7.24919094 17.605178"></polygon>
+                    <polygon id="矩形" fill="#F8F8F8" transform="translate(6.166244, 6.166244) rotate(-45.000000) translate(-6.166244, -6.166244) " points="2.16159306 1.45050889 7.93337566 2.7635103 10.1708944 10.8819786 4.39911182 9.56897718"></polygon>
+                </g>
+                <polygon id="矩形" fill="#F8F8F8" transform="translate(42.102000, 17.408919) rotate(-45.000000) translate(-42.102000, -17.408919) " points="30.4737701 4.67884582 47.2865305 9.26076576 53.7302292 30.1389919 36.508924 25.4921696"></polygon>
+                <polygon id="矩形" fill="#EAEBEB" points="24.8780787 16.9616969 43.052836 27.073501 43.052836 52.5163006 31.2939072 45.4294512 31.2939072 38.1833524 24.8780787 34.4595549"></polygon>
+                <path d="M20.4631579,31.0012837 L20.4631579,3.78947368 L40.9263158,14.8833788 L40.9263158,17.3953787" id="路径-12" stroke="#979797" stroke-dasharray="3"></path>
+                <polygon id="矩形" fill="url(#linearGradient-1)" points="0 19.7052632 13.2448056 27.6476279 13.2448056 47.2923315 0 39.3499667"></polygon>
+                <polygon id="矩形" fill="url(#linearGradient-2)" points="15.4924051 52.2947368 21.9161581 56.0913166 21.9161581 65.4818051 15.4924051 61.6852253"></polygon>
+                <polygon id="矩形" fill="url(#linearGradient-3)" points="37.1368421 28.8 41.2869109 31.5055838 41.2869109 38.1975946 37.1368421 35.4920108"></polygon>
+                <path d="M31.8315789,57.7655332 L48.5052632,68.8133 L48.5052632,50.7789474" id="路径-11" stroke="#979797" stroke-dasharray="3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

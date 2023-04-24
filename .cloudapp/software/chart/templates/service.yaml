@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ .Values.SERVER_NAME }}-service"
+  namespace: default
+  annotations:
+    # {{ .Values.SERVER_NAME }} 需要被应用网关集成，需要使用这个 annotation 将对应服务的 CLB 设置为内网 CLB
+    service.kubernetes.io/qcloud-loadbalancer-internal-subnetid: {{ .Values.SUBNET_ID }}
+spec:
+  externalTrafficPolicy: Cluster
+  type: LoadBalancer
+  ports:
+    - name: clb-{{.Values.SERVER_NAME}}-tcp-80-{{ .Values.SERVER_PORT }}
+      port: 80
+      targetPort: {{ .Values.SERVER_PORT }}
+      protocol: TCP
+  selector:
+    k8s-app: {{ .Values.SERVER_NAME }}
+    qcloud-app: {{ .Values.SERVER_NAME }}
+  sessionAffinity: None

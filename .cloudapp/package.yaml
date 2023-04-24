@@ -1,0 +1,13 @@
+# 应用 ID，需修改成自己的应用 ID
+id: ${packageId}
+
+# 前端模块指定
+frontend:
+  runtimeMode: console
+  src: ./software/frontend/console
+
+# 可调用的云 API
+scopes:
+  cloudAPI:
+    - clb:DescribeLoadBalancers
+    - clb:DescribeLoadBalancerOverview
