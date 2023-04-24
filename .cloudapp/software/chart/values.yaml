@@ -17,4 +17,4 @@ SERVER_PORT: 8000
 SERVER_NAME: api-server
 
 # API 服务镜像
-SERVER_IMAGE: cloudapp-tcr.tencentcloudcr.com/techird/cloudapp-demo-my-clb:v1
+SERVER_IMAGE: cloudapp.tencentcloudcr.com/${packageId}/cloudapp-demo-my-clb:latest

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "docker build --platform amd64 -t \"cloudapp-tcr.tencentcloudcr.com/techird/cloudapp-demo-my-clb:$(date +'%Y-%m-%d_%H%M%S')\" ."
+    "build": "docker build -t \"$(cloudapp docker ../.cloudapp --url | awk -F'[' '{print $1}')cloudapp-demo-my-clb:latest\" .",
+    "push": "docker push \"$(cloudapp docker ../.cloudapp --url | awk -F'[' '{print $1}')cloudapp-demo-my-clb:latest\""
   },
   "author": "",
   "license": "ISC",
